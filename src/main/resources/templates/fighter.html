@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/fighter" method="get">
+  fighter A: <input type="text" name="a" />
+  fighter B: <input type="text" name="b" />
+  <input type="submit" value="Submit" />
+  <p><a href="/home">home</a></p>
+</form>
+<div th:utext="${name}"></div>
+ <!-- <p th:text=" ${name} " /> -->
+</body>
+</html>
