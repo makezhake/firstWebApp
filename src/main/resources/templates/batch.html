@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/batch" method="get">
+  key in jobgo to trigger the job: <input type="text" name="jobgo" />
+  
+  <input type="submit" value="Submit" />
+  <p><a href="/home">home</a></p>
+</form>
+<div th:utext="${name}"></div>
+ <!-- <p th:text=" ${name} " /> -->
+</body>
+</html>
